@@ -6,6 +6,9 @@
 -- Generation Time: Feb 20, 2022 at 06:31 PM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.21
+DROP DATABASE categories;
+CREATE DATABASE IF NOT EXISTS `categories` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `categories`;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -37,9 +40,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
-(1, 'Category 1'),
-(2, 'Category 2'),
-(3, 'Category 3');
+(1, 'Apple'),
+(2, 'Samsung'),
+(3, 'Huawei');
 
 -- --------------------------------------------------------
 
@@ -60,18 +63,18 @@ CREATE TABLE `records` (
 --
 
 INSERT INTO `records` (`recordID`, `categoryID`, `name`, `price`, `image`) VALUES
-(1, 1, 'Some text', '12.00', '644471.jpg'),
-(2, 1, 'Some text', '15.00', '233012.jpg'),
-(3, 1, 'Some text', '18.00', '329484.jpg'),
-(4, 1, 'Some text', '10.00', '644055.jpg'),
-(5, 2, 'Some text', '16.00', '373465.jpg'),
-(6, 2, 'Some text', '19.00', '373989.jpg'),
-(7, 2, 'Some text', '12.00', '374104.jpg'),
-(8, 2, 'Some text', '10.00', '4733.jpg'),
-(9, 2, 'Some text', '15.00', '834551.jpg'),
-(10, 3, 'Some text', '13.00', '908783.jpg'),
-(11, 3, 'Some text', '17.00', '835545.jpg'),
-(12, 3, 'Some text', '19.00', '119273.jpg');
+(1, 1, 'Iphone 6', '120', '001.png'),
+(2, 1, 'Iphone 6s', '150', '001.png'),
+(3, 1, 'Iphone 6s Plus', '180', '001.png'),
+(4, 1, 'Iphone 7', '200', '001.png'),
+(5, 2, 'Samsung s6', '220', '001.png'),
+(6, 2, 'Samsung s7', '250', '001.png'),
+(7, 2, 'Samsung s8', '280', '001.png'),
+(8, 2, 'Samsung s9', '300', '001.png'),
+(9, 2, 'Samsung s10', '350', '001.png'),
+(10, 3, 'Huawei P60', '380', '001.png'),
+(11, 3, 'Huawei P70', '360', '001.png'),
+(12, 3, 'Huawei P80', '400', '001.png');
 
 --
 -- Indexes for dumped tables
@@ -109,4 +112,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
 

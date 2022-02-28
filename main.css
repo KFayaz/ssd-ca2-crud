@@ -2,7 +2,7 @@
 /* the styles for the html elements */
 
 body {
-    background-color: #ccc;
+    background-color: rgb(212, 32, 32);
 }
 
 .container {
@@ -10,19 +10,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 1000px;
     margin: 0 auto;
-    background-color: white;
-    border: 1px solid black;
+    background-color: rgb(235, 146, 13);
+    border: 3px solid rgb(200, 243, 9);
     padding: .5em 2em;
+    box-shadow: 0px 0px 33px 12px rgba(20, 20, 2, 0.66);
+-webkit-box-shadow: 0px 0px 33px 12px rgba(19, 18, 10, 0.66);
+-moz-box-shadow: 0px 0px 33px 12px rgba(21, 22, 14, 0.66);
 }
 
 header {
     margin: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(234, 250, 8);
+    border: 2px;
 }
 header h1 {
     margin: 0;
     padding: .5em 0;
-    color: black;
+    color: rgb(235, 252, 8);
 }
 
 aside {
@@ -56,14 +60,16 @@ h1 {
     font-size: 150%;
     margin: 0;
     padding: .5em 0 .25em;
+    color: yellow;
 }
 h2 {
     font-size: 120%;
     margin: 0;
     padding: .25em 0 .5em;
+    color: yellow;
 }
 h1, h2 {
-    color: #333;
+    color: rgb(218, 11, 11);
 }
 ul {
     margin: 0 0 1em 0;
@@ -81,11 +87,11 @@ a:hover {
     color: rgb(208, 133, 4);
 }
 table {
-    border: 1px solid black;
+    border: 2px solid rgb(230, 226, 12);
     border-collapse: collapse;
 }
 td, th {
-    border: 1px dashed black;
+    border: 2px dashed rgb(231, 216, 12);
     padding: .2em .5em .2em .5em;
     vertical-align: top;
     text-align: left;
