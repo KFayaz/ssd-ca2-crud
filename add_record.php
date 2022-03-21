@@ -3,13 +3,13 @@
 // Get the product data
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
-$colour = filter_input(INPUT_POST, 'colour');
+$Colour = filter_input(INPUT_POST, 'Colour');
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
 
 // Validate inputs
 if ($category_id == null || $category_id == false ||
-    $name == null ||$colour == null || $price == null || $price == false ) {
-    $error = "Invalid product data. Check all fields and try again.";
+    $name == null ||$Colour == null || $price == null || $price == false ) {
+    $error = "Invalid phone data. Check all fields and try again.";
     include('error.php');
     exit();
 } else {
@@ -64,13 +64,13 @@ if ($category_id == null || $category_id == false ||
 
     // Add the product to the database 
     $query = "INSERT INTO records
-                 (categoryID, name, colour, price, image)
+                 (categoryID, name, Colour, price, image)
               VALUES
-                 (:category_id, :name, :colour,:price, :image)";
+                 (:category_id, :name, :Colour,:price, :image)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
-    $statement->bindValue(':colour', $colour);
+    $statement->bindValue(':Colour', $Colour);
     $statement->bindValue(':price', $price);
     $statement->bindValue(':image', $image);
     $statement->execute();

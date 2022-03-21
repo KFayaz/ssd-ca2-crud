@@ -31,7 +31,7 @@ include('includes/header.php');
             <br>
 
             <label>Colour:</label>
-            <input type="input" name="colour">
+            <input type="input" name="Colour">
             <br>
 
             <label>List Price:</label>
