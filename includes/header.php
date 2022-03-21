@@ -6,4 +6,10 @@
 
 <!-- the body section -->
 <body>
-<header><h1>Used Phones</h1></header>
+<header>
+<img src="/logo.JPG" alt="LOGO" width="50" height="60">    
+
+<h1>Used Phones</h1>
+
+
+</header>
