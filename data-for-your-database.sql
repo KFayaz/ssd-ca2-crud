@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `categories`
 --
-
+DROP TABLE `categories`, `records`;
 CREATE TABLE `categories` (
   `categoryID` int(11) NOT NULL,
   `categoryName` varchar(255) NOT NULL
@@ -62,17 +62,17 @@ CREATE TABLE `records` (
 
 INSERT INTO `records` (`recordID`, `categoryID`, `name`, `Colour`, `price`, `image`) VALUES
 (1, 1, 'Iphone 6', 'Black', '130.00', '001.png'),
-(2, 1, 'Iphone 6s', 'Black', '150.00', '001.png'),
-(3, 1, 'Iphone 6s Plus', 'Black', '180.00', '001.png'),
-(4, 1, 'Iphone 7', 'White', '200.00', '001.png'),
-(5, 2, 'Samsung s6', 'Blue', '220.00', '001.png'),
-(6, 2, 'Samsung s7', 'Black', '250.00', '001.png'),
-(7, 2, 'Samsung s8', 'White', '280.00', '001.png'),
-(8, 2, 'Samsung s9', 'Gold', '300.00', '001.png'),
-(9, 2, 'Samsung s10', 'White', '350.00', '001.png'),
-(10, 3, 'Huawei P60', 'Black', '380.00', '001.png'),
-(11, 3, 'Huawei P70', 'Gold', '360.00', '001.png'),
-(12, 3, 'Huawei P80', 'Black', '400.00', '001.png');
+(2, 1, 'Iphone 6s', 'Black', '150.00', '002.jpg'),
+(3, 1, 'Iphone 6s Plus', 'Black', '180.00', '003.jpg'),
+(4, 1, 'Iphone 7', 'White', '200.00', '004.jpg'),
+(5, 2, 'Samsung s6', 'Blue', '220.00', '005.jpg'),
+(6, 2, 'Samsung s7', 'Black', '250.00', '006.jpg'),
+(7, 2, 'Samsung s8', 'White', '280.00', '007.jpg'),
+(8, 2, 'Samsung s9', 'Gold', '300.00', '008.jpg'),
+(9, 2, 'Samsung s10', 'White', '350.00', '009.jpg'),
+(10, 3, 'Huawei P60', 'Black', '380.00', '010.jpg'),
+(11, 3, 'Huawei P70', 'Gold', '360.00', '011.jpg'),
+(12, 3, 'Huawei P80', 'Black', '400.00', '012.jpg');
 
 --
 -- Indexes for dumped tables
